@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <h1 id="heading">Hello world</h1>
+
+    <button id="my-button" onclick="changeText()">Click  me!</button>
+    </br>
+    </br>
+    <textarea id = "textarea" rows = "5" cols = "10"></textarea>
+    </br>
+    <button id="add-data" onclick="addData()">Add Data</button>
+    <ul>
+      <li id="list1">
+      </li>
+      <li id="list2">
+      </li>
+    </ul>
+    <script>
+      function changeText(){
+        console.log("Hello world");
+        var heading = document.getElementById("heading");
+        heading.textContent = "My noatebook";        
+      };
+
+      function addData() {
+        var list1 = document.getElementById("list1");
+        list1.innerText = "Good";
+        var list2 = document.getElementById("list2");
+        list2.innerText = document.getElementById("textarea").value;        
+      };
+      </script>
+  </body>
+</html>
